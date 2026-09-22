@@ -1,4 +1,4 @@
-:host {
+app-root {
   display: block;
   overflow: hidden;
   color: #26362d;
@@ -639,7 +639,7 @@ h2 i {
   display: flex;
   gap: 14px;
   width: max-content;
-  animation: review-scroll 28s linear infinite;
+  animation: review-scroll 28s ease-in-out infinite alternate;
 }
 .reviews-track:hover {
   animation-play-state: paused;

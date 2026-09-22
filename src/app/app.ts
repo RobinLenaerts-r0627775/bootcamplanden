@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
-
-interface UpcomingTuesday {
-  label: string;
-  day: number;
-}
+import { HomePage, UpcomingTuesday } from './home-page';
+import { PricesPage } from './prices-page';
 
 @Component({
-  imports: [],
+  imports: [HomePage, PricesPage],
   selector: 'app-root',
-  styleUrl: './app.scss',
   templateUrl: './app.html',
 })
 export class App {
@@ -18,6 +14,15 @@ export class App {
   public setPage(page: 'home' | 'prices'): void {
     this.currentPage = page;
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  public navigateTo(section: string, event: Event): void {
+    event.preventDefault();
+    this.currentPage = 'home';
+
+    requestAnimationFrame(() => {
+      document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+    });
   }
 
   private getUpcomingTuesdays(): UpcomingTuesday[] {
