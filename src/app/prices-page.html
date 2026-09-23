@@ -8,37 +8,68 @@
             <article class="price-card">
                 <span class="card-tag">Personal training</span>
                 <h2>€ 60</h2>
-                <p>per sessie</p>
+                <p>per sessie (60 minuten)
+                </p>
+                <ul>
+                    <li>Individuele begeleiding</li>
+                    <li>Volledig op maat</li>
+                    <li>Focus op jouw doelen</li>
+                </ul>
+
             </article>
             <article class="price-card accent">
-                <span class="card-tag">Bootcamp</span>
-                <h2>€ 12</h2>
-                <p>per training</p>
+                <span class="card-tag">Duo training</span>
+                <h2>€ 45</h2>
+                <p>per persoon (60 minuten)</p>
+                <ul>
+                    <li>Samen met een partner</li>
+                    <li>Leuk en motiverend</li>
+                    <li>Zelfde persoonlijke aanpak</li>
+                </ul>
             </article>
             <article class="price-card">
                 <span class="card-tag">Starter pakket</span>
-                <h2>€ 120</h2>
-                <p>voor 2 sessies + begeleiding</p>
+                <h2>€ 250</h2>
+                <p>voor 5 sessies + begeleiding</p>
+                <ul>
+                    <li>Ideaal om te starten</li>
+                    <li>Kennismaking + persoonlijke aanpak</li>
+                    <li>Flexibel in te plannen</li>
+                </ul>
             </article>
         </div>
 
-        <div class="equipment-layout">
-            <div class="equipment-copy">
-                <h3>Materiaal</h3>
-                <p>Hier kunnen later de eigen materialen, accessoires en extra's worden geplaatst die je gebruikt in de
-                    trainingen.</p>
-                <ul>
-                    <li>Trainingsbanden</li>
-                    <li>Mini loops</li>
-                    <li>Gymmateriaal</li>
-                    <li>Stappen- en mobiliteitsapparatuur</li>
-                </ul>
+        <section class="equipment-section" aria-labelledby="equipment-title">
+            <div class="equipment-layout">
+                <div class="equipment-heading">
+                    <h2 id="equipment-title">Materiaal</h2>
+                    <p>Alle materiaal is aanwezig en inbegrepen in de sessies.</p>
+                </div>
+                <div class="equipment-items">
+                    <article class="equipment-item"><span class="equipment-icon" aria-hidden="true"><i
+                                class="fas fa-dumbbell"></i></span><strong>Krachtmateriaal</strong><small>Dumbbells,
+                            kettlebells,<br />barbells, rack.</small></article>
+                    <article class="equipment-item"><span class="equipment-icon" aria-hidden="true"><i
+                                class="fas fa-grip-lines"></i></span><strong>Weerstandsbanden</strong><small>Mini bands,
+                            power bands.</small></article>
+                    <article class="equipment-item"><span class="equipment-icon" aria-hidden="true"><i
+                                class="fas fa-square"></i></span><strong>Matten
+                            &amp;<br />mobiliteitsmateriaal</strong><small>Yoga
+                            matten, foam roller,<br />stretchmateriaal.</small></article>
+                    <article class="equipment-item"><span class="equipment-icon" aria-hidden="true"><i
+                                class="fas fa-cube"></i></span><strong>Extra</strong><small>Steps, TRX, plyo
+                            box,<br />medicin
+                            ballen en meer.</small></article>
+                </div>
             </div>
-            <div class="equipment-gallery">
-                <div class="equipment-photo placeholder-one"></div>
-                <div class="equipment-photo placeholder-two"></div>
-                <div class="equipment-photo placeholder-three"></div>
+            <div class="equipment-cta">
+                <div>
+                    <h2>Klaar om te starten?</h2>
+                    <p>Plan een kennismaking en ontdek wat beweging voor jou kan doen.</p>
+                </div>
+                <button class="equipment-cta-button" type="button" (click)="contactRequested.emit()">Plan een
+                    kennismaking</button>
             </div>
-        </div>
+        </section>
     </div>
 </main>

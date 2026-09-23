@@ -1,14 +1,15 @@
 <header class="site-header">
-    <a class="brand" href="#top" aria-label="Stien Beweegt home" (click)="setPage('home')"><img class="brand-mark"
-            src="images/Icon.png" alt="Stien Beweegt logo" /><span>Stien<br /><em>Haverals</em></span></a>
-    <nav class="desktop-nav" aria-label="Hoofdnavigatie"><a href="#aanbod" (click)="navigateTo('aanbod', $event)">Aanbod</a><a
-            href="#over-stien" (click)="navigateTo('over-stien', $event)">Over Stien</a><a href="#reviews"
-            (click)="navigateTo('reviews', $event)">Ervaringen</a></nav>
-    <a class="header-cta" href="#contact" (click)="navigateTo('contact', $event)">Neem contact op</a>
+        <a class="brand" href="#top" aria-label="Stien Beweegt home" (click)="setPage('home')"><img class="brand-mark"
+                        src="images/Icon.png" alt="Stien Beweegt logo" /><span>Stien<br /><em>Haverals</em></span></a>
+        <nav class="desktop-nav" aria-label="Hoofdnavigatie"><a href="#aanbod"
+                        (click)="navigateTo('aanbod', $event)">Aanbod</a><a href="#over-stien"
+                        (click)="navigateTo('over-stien', $event)">Over Stien</a><a href="#reviews"
+                        (click)="navigateTo('reviews', $event)">Ervaringen</a></nav>
+        <a class="header-cta" href="#contact" (click)="navigateTo('contact', $event)">Neem contact op</a>
 </header>
 
 @if (currentPage === 'home') {
 <app-home-page [upcomingTuesdays]="upcomingTuesdays" (pricesRequested)="setPage('prices')" />
 } @else {
-<app-prices-page (homeRequested)="setPage('home')" />
+<app-prices-page (homeRequested)="setPage('home')" (contactRequested)="showContact()" />
 }

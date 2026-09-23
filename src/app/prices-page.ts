@@ -6,4 +6,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class PricesPage {
   @Output() public homeRequested = new EventEmitter<void>();
+  @Output() public contactRequested = new EventEmitter<void>();
 }
