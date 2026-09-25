@@ -275,7 +275,7 @@ h2 i {
 }
 .offer-section {
   background: #e7ede5;
-  padding: 105px 0 120px;
+  padding: 4em 0 4em;
 }
 .section-heading {
   margin-bottom: 47px;
@@ -307,13 +307,22 @@ h2 i {
   gap: 14px;
 }
 .offer-card {
-  min-height: 305px;
-  padding: 27px;
+  min-height: 355px;
+  padding: 18px 27px 27px;
   background: #f7f4ef;
   color: #26362d;
   text-decoration: none;
   position: relative;
   transition: transform 0.25s ease;
+}
+.offer-card-image {
+  display: block;
+  width: 100%;
+  height: 125px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: center;
 }
 .offer-card:hover {
   transform: translateY(-5px);
@@ -338,7 +347,7 @@ h2 i {
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.06em;
-  margin: 70px 0 15px;
+  margin: 0 0 15px;
 }
 .offer-card p {
   max-width: 220px;
@@ -361,8 +370,8 @@ h2 i {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 12%;
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 .about-image {
   position: relative;
@@ -408,7 +417,7 @@ h2 i {
 .referral-section {
   background: #b65e40;
   color: #fff;
-  padding: 110px 0;
+  padding: 4em 0;
 }
 .referral-layout {
   display: grid;
@@ -460,8 +469,8 @@ h2 i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10%;
-  padding-top: 145px;
-  padding-bottom: 145px;
+  padding-top: 4em;
+  padding-bottom: 4em;
   align-items: center;
 }
 .personal-copy > p:not(.eyebrow) {
@@ -504,6 +513,7 @@ h2 i {
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
   padding-top: 34px;
+  padding-bottom: 4em;
   border-top: 1px solid #dfe5dd;
 }
 .personal-benefit {
@@ -544,20 +554,19 @@ h2 i {
 }
 .bootcamp-section {
   background: #e7ede5;
-  padding: 105px 0 120px;
+  padding: 3em 0 3.5em;
 }
 .bootcamp-content {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 8%;
-  align-items: stretch;
+  align-items: start;
 }
 .schedule-card {
   background: #f7f4ef;
   padding: 28px;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .schedule-top {
   display: flex;
@@ -610,10 +619,32 @@ h2 i {
 }
 .full-button {
   width: 100%;
-  margin-top: auto;
+  margin-top: 24px;
 }
 .bootcamp-aside {
-  padding: 15px 5px;
+  padding: 0 5px;
+}
+.bootcamp-intro {
+  max-width: 560px;
+  margin-bottom: 28px;
+}
+.bootcamp-intro .eyebrow {
+  margin-bottom: 10px;
+}
+.bootcamp-intro h3 {
+  margin: 0;
+  color: #26362d;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+}
+.bootcamp-intro > p:last-child {
+  max-width: 560px;
+  margin: 12px 0 0;
+  color: #69776d;
+  font-size: 12px;
+  line-height: 1.55;
 }
 .quote-mark {
   color: #d6a64e;
@@ -635,9 +666,9 @@ h2 i {
   font-size: 12px;
 }
 .price-note {
-  margin-top: 30px;
-  border-top: 1px solid #bec9be;
-  padding-top: 18px;
+  margin-top: 24px;
+  padding: 18px;
+  background: #f7f4ef;
 }
 .price-note strong {
   display: block;
@@ -646,6 +677,37 @@ h2 i {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 10px;
+}
+.price-note-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.bootcamp-price {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  column-gap: 8px;
+  padding: 10px 12px;
+}
+.bootcamp-price span,
+.bootcamp-price small {
+  color: #5a665f;
+}
+.bootcamp-price span {
+  font-size: 11px;
+  font-weight: 700;
+}
+.bootcamp-price b {
+  color: #b65e40;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.bootcamp-price small {
+  grid-column: 1 / -1;
+  font-size: 9px;
 }
 .price-note p {
   color: #768276;
@@ -662,7 +724,7 @@ h2 i {
   margin-top: 10px;
 }
 .review-section {
-  padding: 130px 0;
+  padding: 4em 0;
 }
 .reviews-carousel {
   overflow: hidden;
@@ -674,7 +736,7 @@ h2 i {
   display: flex;
   gap: 14px;
   width: max-content;
-  animation: review-scroll 28s ease-in-out infinite alternate;
+  animation: review-scroll 22s ease-in-out infinite alternate;
 }
 .reviews-track:hover {
   animation-play-state: paused;
@@ -736,7 +798,7 @@ h2 i {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(var(--review-offset, 0px), 0, 0);
   }
 }
 .contact-section {
@@ -847,7 +909,7 @@ h2 i {
 }
 
 .prices-page {
-  padding: 80px 0 110px;
+  padding: 1em 0 1em;
 }
 
 .prices-page-inner {
@@ -866,6 +928,27 @@ h2 i {
   padding: 0;
 }
 
+.prices-title-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.82fr);
+  align-items: center;
+  gap: 52px;
+}
+
+.prices-title-copy {
+  padding-bottom: 12px;
+}
+
+.prices-title-image {
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 120px 12px 12px 90px;
+  filter: saturate(0.78);
+}
+
 .prices-page h1 {
   margin: 0;
   font-family: 'Playfair Display', serif;
@@ -877,6 +960,71 @@ h2 i {
 
 .prices-page h1 span {
   color: #b65e40;
+}
+
+.approach-section {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.4fr);
+  align-items: center;
+  gap: 42px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #e7ede5;
+}
+.approach-heading h2 {
+  margin: 0;
+  color: #26362d;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 0.98;
+}
+.approach-heading h2 i {
+  color: #b65e40;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+.approach-heading > p:last-child {
+  max-width: 320px;
+  margin: 18px 0 0;
+  color: #5a665f;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.approach-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 30px;
+}
+.approach-item {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+}
+.approach-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f7f4ef;
+  color: #5a665f;
+  font-size: 18px;
+}
+.approach-item strong,
+.approach-item small {
+  display: block;
+}
+.approach-item strong {
+  color: #26362d;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.approach-item small {
+  margin-top: 5px;
+  color: #69776d;
+  font-size: 10px;
+  line-height: 1.45;
 }
 
 .prices-grid {
@@ -971,6 +1119,7 @@ h2 i {
   background: #e7ede5;
   border-radius: 16px;
   padding: 24px 18px 22px;
+  margin-bottom: 1em;
 }
 .equipment-heading {
   text-align: left;
@@ -1020,12 +1169,18 @@ h2 i {
   font-size: 10px;
   line-height: 1.35;
 }
+.equipment-cta-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 90px;
+  align-items: center;
+  gap: 18px;
+}
 .equipment-cta {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-top: 12px;
-  padding: 13px 18px;
+  padding: 17px 22px;
   border-radius: 13px;
   background: #b65e40;
   color: #fff;
@@ -1033,17 +1188,17 @@ h2 i {
 .equipment-cta h2 {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 24px;
 }
 .equipment-cta p {
   margin: 2px 0 0;
-  font-size: 10px;
+  font-size: 11px;
 }
 .equipment-cta-button {
   margin-left: auto;
   border: 0;
   border-radius: 999px;
-  padding: 10px 17px;
+  padding: 12px 20px;
   background: #fff;
   color: #b65e40;
   font: inherit;
@@ -1051,6 +1206,25 @@ h2 i {
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
+}
+.prices-closing-note {
+  position: relative;
+  margin: 0;
+  color: #69776d;
+  font-family: Fraunces, serif;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.05;
+  text-align: center;
+  transform: rotate(-7deg);
+}
+.prices-closing-note span {
+  display: block;
+  width: 42px;
+  height: 1px;
+  margin: 9px auto 0;
+  background: #b65e40;
+  transform: rotate(-9deg);
 }
 .mobile-whatsapp {
   display: none;
@@ -1077,10 +1251,37 @@ h2 i {
   .prices-page-inner {
     gap: 20px;
   }
+  .prices-title-block {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .prices-title-copy {
+    padding-bottom: 0;
+  }
+  .prices-title-image {
+    height: 230px;
+    border-radius: 90px 10px 90px 10px;
+  }
   .prices-page h1 {
     font-size: 42px;
     line-height: 1;
     letter-spacing: -0.04em;
+  }
+  .approach-section {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 24px 18px;
+  }
+  .approach-heading h2 {
+    font-size: 36px;
+  }
+  .approach-heading > p:last-child {
+    max-width: none;
+    margin-top: 14px;
+  }
+  .approach-items {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
   .prices-grid {
     grid-template-columns: 1fr;
@@ -1122,6 +1323,15 @@ h2 i {
   .equipment-cta-button {
     width: 100%;
   }
+  .equipment-cta-row {
+    grid-template-columns: minmax(0, 1fr) 76px;
+    gap: 8px;
+  }
+  .prices-closing-note {
+    justify-self: center;
+    margin: 0;
+    font-size: 13px;
+  }
   .hero {
     display: flex;
     flex-direction: column;
@@ -1133,15 +1343,21 @@ h2 i {
   .hero h1 {
     font-size: 52px;
   }
+  .hero-copy {
+    text-align: center;
+  }
   .hero-intro {
     font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-actions {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 21px;
   }
   .hero-note {
+    justify-content: center;
     margin-top: 40px;
   }
   .hero-visual {
@@ -1165,7 +1381,7 @@ h2 i {
   }
   .offer-section,
   .bootcamp-section {
-    padding: 75px 0;
+    padding: 1em 0;
   }
   .split-heading,
   .referral-layout,
@@ -1180,7 +1396,10 @@ h2 i {
     grid-template-columns: 1fr;
   }
   .offer-card {
-    min-height: 270px;
+    min-height: 330px;
+  }
+  .offer-card-image {
+    height: 110px;
   }
   .about-section,
   .personal-section {
@@ -1190,7 +1409,12 @@ h2 i {
     padding-top: 85px;
     padding-bottom: 85px;
   }
+  .about-image {
+    width: 100%;
+  }
   .about-image img {
+    display: block;
+    margin: 0 auto;
     height: 400px;
   }
   .about-copy h2,
@@ -1236,6 +1460,9 @@ h2 i {
   .review-section {
     padding: 85px 0;
   }
+  .reviews-track {
+    animation-duration: 32s;
+  }
   .reviews-grid {
     margin-top: 32px;
   }
@@ -1244,6 +1471,11 @@ h2 i {
   }
   .contact-note {
     margin-top: 65px;
+  }
+  .contact-section .personal-photo img {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 20px auto 0;
   }
   .contact-actions {
     flex-direction: column;

@@ -28,14 +28,21 @@
                     niveau en elk doel.</p>
             </div>
             <div class="offer-grid"><a class="offer-card featured" href="#verwijzing">
+                    <img class="offer-card-image"
+                        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Buiten bewegen in het groen" />
                     <h3>Bewegen Op<br />Verwijzing</h3>
                     <p>Laagdrempelig starten met bewegen, op jouw maat en met extra ondersteuning.</p><span
                         class="card-link">Meer ontdekken</span>
                 </a><a class="offer-card" href="#personal">
+                    <img class="offer-card-image"
+                        src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                        alt="Persoonlijke begeleiding tijdens een training" />
                     <h3>Personal<br />training</h3>
                     <p>1-op-1 begeleiding die aansluit bij jouw lichaam, leven en doelen.</p><span
                         class="card-link">Meer ontdekken</span>
                 </a><a class="offer-card dark" href="#bootcamps">
+                    <img class="offer-card-image" src="images/bootcamp.jpg" alt="Samen trainen tijdens een bootcamp" />
                     <h3>Bootcamps<br />in Landen</h3>
                     <p>Samen buiten bewegen, plezier maken en sterker worden. Iedereen welkom.</p><span
                         class="card-link">Bekijk de planning</span>
@@ -101,12 +108,12 @@
     <section class="personal-section section-wrap" id="personal">
         <div class="personal-copy">
             <p class="eyebrow">Voor jouw persoonlijke doelen</p>
-            <h2>Een training die<br /><i>met je meebeweegt.</i></h2>
+            <h2>Personal Training</h2>
             <p>Meer energie, sterker worden, opnieuw vertrouwen krijgen in je lichaam of gewoon tijd maken voor jezelf?
                 We stemmen elke sessie af op waar jij vandaag staat.</p>
             <ul>
                 <li><span>•</span> 1-op-1 aandacht en coaching</li>
-                <li><span>•</span> Sessies van 45 of 60 minuten</li>
+                <li><span>•</span> Sessies van 60 minuten</li>
                 <li><span>•</span> In Landen of op een plek die werkt voor jou</li>
             </ul>
             <div class="personal-actions"><a class="button button-primary" href="#contact">Plan een
@@ -143,8 +150,15 @@
                 <p class="heading-side">Een energieke training in een fijne groep, binnen of buiten. Je hoeft geen
                     ervaring te hebben, alleen zin om mee te doen!</p>
             </div>
+
             <div class="bootcamp-content">
+
                 <div class="schedule-card">
+                    <div class="bootcamp-intro">
+                        <p class="eyebrow">Voor wie?</p>
+                        <p>Bootcamp is er voor iedereen die op een leuke en toegankelijke manier wil bewegen. Samen
+                            zorgen we voor meer energie, een sterker lichaam en vooral: een goed gevoel!</p>
+                    </div>
                     <div class="schedule-top"><span>VOLGENDE SESSIE</span></div>
                     <div class="date-row"><strong>{{ upcomingTuesdays[0].label }}<br /><em>{{ upcomingTuesdays[0].day
                                 }}</em></strong>
@@ -168,7 +182,12 @@
                     <div class="bootcamp-photo"><img src="images/bootcamp.jpg"
                             alt="Personal trainer begeleidt een oefening" /></div>
                     <div class="price-note"><strong>Prijzen</strong>
-                        <p>Losse beurt - <b>€ 12</b>. | Tienbeurtenkaart - <b>€ 108</b></p>
+                        <div class="price-note-grid">
+                            <div class="bootcamp-price"><span>Losse beurt</span><b>€ 12</b><small>per training</small>
+                            </div>
+                            <div class="bootcamp-price"><span>Tienbeurtenkaart</span><b>€ 108</b><small>10
+                                    trainingen</small></div>
+                        </div>
                         <p class="payment-note">Ter plaatse te betalen via Payconiq, cash of via de bankingapp.</p>
                     </div>
                 </div>
@@ -180,8 +199,8 @@
         <div class="section-wrap">
             <p class="eyebrow">Woorden die blijven hangen</p>
             <h2>Niet alleen van<br /><i>mij gehoord.</i></h2>
-            <div class="reviews-carousel" aria-label="Recensies van klanten">
-                <div class="reviews-track">
+            <div class="reviews-carousel" aria-label="Recensies van klanten" #reviewsCarousel>
+                <div class="reviews-track" #reviewsTrack>
                     <article>
                         <div class="stars">★★★★★</div>
                         <p>“Nooit had ik verwacht dat ik de liefde voor het sporten zou terugvinden. Maar dankzij Stien
@@ -214,6 +233,15 @@
                         <footer><span class="avatar avatar-one">W</span><span><strong>William,
                                     30</strong><small>Bootcamp</small></span></footer>
                     </article>
+                    <article>
+                        <div class="stars">★★★★★</div>
+                        <p>“Stien slaagt erin om de trainingen keer op keer afwisselend en effciënt te maken. Haar
+                            enthousiasme duwt je altijd nét iets verder dan je zelf zou doen. Voor mij is bootcamp een
+                            perfecte aanvulling op het lopen en fietsen.
+                            ”</p>
+                        <footer><span class="avatar avatar-one">K</span><span><strong>Katrien,
+                                    42</strong><small>Bootcamp</small></span></footer>
+                    </article>
                 </div>
             </div>
         </div>
@@ -223,7 +251,7 @@
         <div class="section-wrap contact-layout">
             <div>
                 <p class="eyebrow">Klaar voor jouw eerste stap?</p>
-                <h2>Kom maar<br /><i>bewegen.</i></h2>
+                <h2>Kom mee<br /><i>bewegen.</i></h2>
                 <p>Een vraag, een idee of gewoon benieuwd? Stuur een berichtje. Ik antwoord persoonlijk.</p>
                 <div class="contact-actions"><a class="button button-light" href="https://wa.me/32471106578">WhatsApp
                         mij</a><a class="contact-email"
@@ -243,4 +271,5 @@
         </div>
     </div>
 </footer>
-<a class="mobile-whatsapp" href="https://wa.me/32471106578" aria-label="Contacteer Stien via WhatsApp">◔</a>
+<a class="mobile-whatsapp" href="https://wa.me/32471106578" aria-label="Contacteer Stien via WhatsApp"><i
+        class="fab fa-whatsapp" aria-hidden="true"></i></a>

@@ -1,8 +1,16 @@
 <main class="page-shell prices-page">
     <div class="section-wrap prices-page-inner">
         <button class="back-link" type="button" (click)="homeRequested.emit()">← Terug naar home</button>
-        <p class="eyebrow">Prijzen &amp; materiaal</p>
-        <h1>Alles wat je nodig hebt<br /><span>voor jouw beweging</span></h1>
+        <div class="prices-title-block">
+            <div class="prices-title-copy">
+                <p class="eyebrow">Praktische info</p>
+                <h1>Prijzen &amp;<br /><span>Materiaal</span></h1>
+            </div>
+            <img class="prices-title-image"
+                src="https://plus.unsplash.com/premium_photo-1777650958300-54fdaec1b288?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Fitnessruimte met trainingsmateriaal" />
+        </div>
+
 
         <div class="prices-grid">
             <article class="price-card">
@@ -39,6 +47,38 @@
             </article>
         </div>
 
+        <section class="approach-section" aria-labelledby="approach-title">
+            <div class="approach-heading">
+                <p class="eyebrow">Mijn aanpak</p>
+                <h2 id="approach-title">Wat mag je <i>verwachten?</i></h2>
+                <p>Personal training bij Stien Haverals is 1-op-1 begeleiding, volledig afgestemd op jouw doelen,
+                    niveau en leven. We werken samen aan een sterker, energieker en gezonder jij.</p>
+            </div>
+            <div class="approach-items">
+                <article class="approach-item">
+                    <span class="approach-icon" aria-hidden="true"><i class="fas fa-user"></i></span>
+                    <div><strong>Persoonlijke coaching</strong><small>Volledige 1-op-1 aandacht, met een plan op
+                            maat.</small></div>
+                </article>
+                <article class="approach-item">
+                    <span class="approach-icon" aria-hidden="true"><i class="far fa-clock"></i></span>
+                    <div><strong>60 minuten</strong><small>We nemen de tijd om kwalitatief en
+                            doelgericht te trainen.</small></div>
+                </article>
+                <article class="approach-item">
+                    <span class="approach-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
+                    <div><strong>In Landen of op een plek die werkt voor jou</strong><small>In mijn private
+                            trainingsruimte, buiten of bij jou in de buurt.</small></div>
+                </article>
+                <article class="approach-item">
+                    <span class="approach-icon" aria-hidden="true"><i class="fas fa-bullseye"></i></span>
+                    <div><strong>Afgestemd op jouw doelen</strong><small>Of je nu sterker wilt worden, meer energie
+                            wilt of je gewoon beter in je vel wilt voelen, we stemmen alles af op wat jij nodig
+                            hebt.</small></div>
+                </article>
+            </div>
+        </section>
+
         <section class="equipment-section" aria-labelledby="equipment-title">
             <div class="equipment-layout">
                 <div class="equipment-heading">
@@ -58,17 +98,19 @@
                             matten, foam roller,<br />stretchmateriaal.</small></article>
                     <article class="equipment-item"><span class="equipment-icon" aria-hidden="true"><i
                                 class="fas fa-cube"></i></span><strong>Extra</strong><small>Steps, TRX, plyo
-                            box,<br />medicin
-                            ballen en meer.</small></article>
+                            box,<br />medicine balls en meer.</small></article>
                 </div>
             </div>
-            <div class="equipment-cta">
-                <div>
-                    <h2>Klaar om te starten?</h2>
-                    <p>Plan een kennismaking en ontdek wat beweging voor jou kan doen.</p>
+            <div class="equipment-cta-row">
+                <div class="equipment-cta">
+                    <div>
+                        <h2>Klaar om te starten?</h2>
+                        <p>Plan een kennismaking en ontdek wat beweging voor jou kan doen.</p>
+                    </div>
+                    <button class="equipment-cta-button" type="button" (click)="contactRequested.emit()">Plan een
+                        kennismaking</button>
                 </div>
-                <button class="equipment-cta-button" type="button" (click)="contactRequested.emit()">Plan een
-                    kennismaking</button>
+                <p class="prices-closing-note">A healthy<br />you starts<br />here.<span aria-hidden="true"></span></p>
             </div>
         </section>
     </div>
