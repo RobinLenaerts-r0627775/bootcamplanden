@@ -307,7 +307,8 @@ h2 i {
   gap: 14px;
 }
 .offer-card {
-  min-height: 200px;
+  min-height: 300px;
+
   text-align: center;
   padding: 18px 27px 27px;
   background: #f7f4ef;
@@ -336,17 +337,17 @@ h2 i {
 }
 .offer-card h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 35px;
   line-height: 1;
   letter-spacing: -0.06em;
-  margin: 0 0 15px;
+  margin: 1em 0 15px;
 }
 .offer-card p {
   max-width: 220px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 2;
   opacity: 0.75;
 }
 .card-link {
